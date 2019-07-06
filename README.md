@@ -14,6 +14,14 @@ npm install --save
 ```
 2.Replace DB_URL with your own cloud based MongoDB Url in the .env file
 
+3.To Compile Typescript code
+```
+npm run compile
+```
+4.To run application
+```
+npm start
+```
 ### To Shuffle Playlist:
 
 I have used below function to shuffle the playlist
