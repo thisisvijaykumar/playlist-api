@@ -1,0 +1,31 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "description": "Smart Audit Coding Challenge",
+  "main": "./build/server.js",
+  "engines": {
+    "node": "10.x"
+  },
+  "scripts": {
+    "nodemon": "kill-port 8080 && nodemon",
+    "start": "node build/server.js",
+    "compile": "tsc",
+    "dev": "nodemon"
+  },
+  "author": "Vijay",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.0.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/mongoose": "^5.5.7",
+    "@types/express": "^4.17.0",
+    "nodemon": "^1.19.1",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.2"
+  }
+}
