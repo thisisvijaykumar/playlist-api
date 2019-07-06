@@ -13,3 +13,20 @@ npm install --save
 ```
 2.Replace DB_URL with your own cloud based MongoDB Url in the .env file
 
+### To Shuffle Playlist:
+
+I have used below function to shuffle the playlist
+```
+function shuffle(arr){
+    let len=arr.length,index,temp;
+            while(len>1){
+                index=Math.floor(Math.random()*len);
+                len--;
+                temp=arr[len];
+                arr[len]=arr[index];
+                arr[index]=temp;
+            }
+    return arr;
+}
+
+```
