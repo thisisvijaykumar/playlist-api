@@ -3,7 +3,7 @@ A mini application based on the MongoDB database design and Express.js framework
 
 This App code use 
 - Express.js framework
-- mongoose ORM
+- mongoose ODM
 - Typescript
 
 ### How to use:
