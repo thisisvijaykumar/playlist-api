@@ -3,7 +3,6 @@ import * as express from "express";
 import * as dotenv from "dotenv";
 import * as mongoose from "mongoose";
 import Route from "./routes";
-import ShowAllRoutes from "./showAllRoutes";
 class App {
   public app: express.Application;
   constructor() {
@@ -13,10 +12,6 @@ class App {
     /** Call the db connect */
     this.dbConnect();
     Route.active(this.app);
-    /**
-     * Show all routes
-     */
-    ShowAllRoutes.display(this.app);
   }
   private config(): void {
     /** To enable get json GET request data */
